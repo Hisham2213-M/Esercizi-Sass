@@ -1,0 +1,58 @@
+$color1r: red;
+$color2b: blue;
+$color3g: green;
+
+
+@mixin mixarticle {
+    border-color: $color3g;
+    color: $color2b;
+    font-size: 1rem;
+}
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $color1r;
+    padding: 0.7%;
+
+    h1{
+        color: $color3g;
+        border-bottom: 1px solid $color2b;
+    }
+
+
+    section{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    article {
+        @include mixarticle;
+        border: 1px solid $color3g;
+        text-align: center;
+        
+    }
+
+
+    .final-section {
+        justify-content: center;
+        width: 100%;
+            article { 
+                width: 100%;
+                padding: 0.5%;            }
+           p { font-size: 24px;
+                padding-left: 2%;
+                padding-right: 2%;
+                color: $color3g;
+
+
+        }
+    }    
+}
+
+#art2 {
+    color: $color1r;
+}

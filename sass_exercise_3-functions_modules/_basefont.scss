@@ -1,0 +1,6 @@
+$value:16px;
+@function fontsize($value) {
+    @return $value * 1rem;
+} 
+
+

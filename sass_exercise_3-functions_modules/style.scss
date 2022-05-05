@@ -1,0 +1,61 @@
+@use 'base';
+@use 'basefont';
+@mixin mixarticle {
+    border-color: base.$color3g;
+    color: base.$color2b;
+}
+
+
+
+
+body {
+    font-size: fontsize(1rem);
+
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid base.$color1r;
+    padding: 0.7%;
+
+    h1{
+        color: base.$color3g;
+        border-bottom: 1px solid base.$color2b;
+    }
+
+
+    section{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+
+    article {
+     @include mixarticle;
+        border: 1px solid base.$color3g;
+        text-align: center;
+        
+    }
+
+
+    .final-section {
+        justify-content: center;
+        width: 100%;
+            article { 
+                width: 100%;
+                padding: 0.5%;            }
+           p { font-size: 24px;
+                padding-left: 2%;
+                padding-right: 2%;
+                color:base.$color3g;
+
+
+        }
+    }    
+}
+
+#art2 {
+    color: base.$color1r;
+}

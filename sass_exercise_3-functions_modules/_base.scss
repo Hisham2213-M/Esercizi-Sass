@@ -1,0 +1,10 @@
+$color1r: red;
+$color2b: blue;
+$color3g: green;
+$fontsize:1rem;
+
+@mixin mixarticle {
+    border-color: $color3g;
+    color: $color2b;
+    font-size: 1rem;
+}

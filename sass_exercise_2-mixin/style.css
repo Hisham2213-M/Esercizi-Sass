@@ -14,13 +14,6 @@ div section {
   flex-direction: row;
   padding-bottom: 10px;
 }
-div article {
-  border-color: green;
-  color: blue;
-  font-size: 1rem;
-  border: 1px solid green;
-  text-align: center;
-}
 div .final-section {
   justify-content: center;
   width: 100%;
@@ -28,6 +21,7 @@ div .final-section {
 div .final-section article {
   width: 100%;
   padding: 0.5%;
+  border: 1px solid blue;
 }
 div .final-section p {
   font-size: 24px;
@@ -38,6 +32,18 @@ div .final-section p {
 
 #art2 {
   color: red;
+  border-color: green;
+  font-size: 1rem;
+  border: 1px solid;
+  text-align: center;
+}
+
+section #art1 {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  border: 1px solid;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

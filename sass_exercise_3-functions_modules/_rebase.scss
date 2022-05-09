@@ -1,0 +1,6 @@
+@mixin mixarticle($color, $bordercol, $fontsize:1rem , $bordersize:1px solid) {
+    color: $color;
+    border-color: $bordercol;
+    font-size: $fontsize;
+    border: $bordersize ;
+}

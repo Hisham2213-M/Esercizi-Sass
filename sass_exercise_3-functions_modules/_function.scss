@@ -1,0 +1,6 @@
+@function fontsize($value,$value2) {
+ 
+  
+    @return calc($value / $value2);    
+
+}
